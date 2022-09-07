@@ -5,6 +5,7 @@ import styled from "styled-components";
 import PostModal from "./PostModal";
 import { getArticlesAPI } from "../actions";
 import ReactPlayer from "react-player";
+import React from "react";
 
 const Main = (props) => {
   const [showModal, setShowModal] = useState("close");
@@ -15,7 +16,7 @@ const Main = (props) => {
 
   const handleClick = (e) => {
     e.preventDefault();
-    if (e.target !== e.currentTarget) {
+    if (e.target != e.currentTarget) {
       return;
     }
 
@@ -34,9 +35,10 @@ const Main = (props) => {
 
   return (
     <>
-      { props.articles.length === 0 ? (
+      { 
+      props.articles.length === 0 ? (
         <p>There are no articles</p>
-      ) : (
+        ): (
         <Container>
           <ShareBox>
             <div>

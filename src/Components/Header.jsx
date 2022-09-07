@@ -307,6 +307,7 @@ const SignOut = styled.div`
   transition-duration: 167ms;
   text-align: center;
   display: none;
+  cursor: pointer;
 `;
 
 const User = styled(NavList)`

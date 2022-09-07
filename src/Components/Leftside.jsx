@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { connect } from "react-redux";
+import React from "react";
 
 const Leftside = (props) =>{
     return(

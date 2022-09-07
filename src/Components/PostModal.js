@@ -2,8 +2,9 @@ import { useState } from "react";
 import styled from "styled-components";
 import ReactPlayer from "react-player";     //for videos
 import { connect } from "react-redux";      //to connect to our redux store
-import firebase from "firebase";
+import firebase from "firebase/compat/app";
 import { postArticleAPI } from "../actions";
+import React from "react";
 
 const PostModal = (props) => {
     const [editorText, setEditorText] = useState("");
@@ -298,6 +299,11 @@ const UploadImage = styled.div`
     text-align: center;
     img{
         width: 100%;
+    }
+    p{
+        color: blue;
+        cursor: pointer;
+        text-decoration: underline;
     }
 `
 
